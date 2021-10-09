@@ -85,3 +85,4 @@ if(countRef.exists()){
         alert ("you won")
     }
 }
+//document object model(dom)
