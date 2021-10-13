@@ -6,6 +6,7 @@ var form, game, player
 var allPlayers
 var car1, car2, car3, car4
 var cars=[]
+var myRank
 
 function preload(){
 
@@ -33,7 +34,7 @@ function draw(){
   
 
    if(playerCount === 4){
-     gameState= 1;
+     //gameState= 1;
      game.update(1)
    }
   
@@ -43,10 +44,7 @@ function draw(){
     game.play()
    }
 
-   if(player.distance>4000){
-     gameState =2
-     game.update(2)
-   }
+  
 
    if(gameState=== 2){
      game.end()

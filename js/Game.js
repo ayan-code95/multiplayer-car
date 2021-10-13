@@ -39,6 +39,18 @@ if(countRef.exists()){
 
     play (){
 
+
+        if(player.distance>4000){
+            gameState =2
+            //game.update(2)
+       
+            player.rank++
+            player.updateRank()
+            myRank=player.rank
+        }
+
+        player.getRank()
+
         form.greetings.hide()
         textSize(30)
         text ("game start", 200, 200)
@@ -82,7 +94,7 @@ if(countRef.exists()){
     }
 
     end(){
-        alert ("you won")
+        alert ("you won"+"myrank"+myRank)
     }
 }
 //document object model(dom)
